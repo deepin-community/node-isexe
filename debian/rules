@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS) $(DEB_BUILD_PROFILES)))
+	tap -R spec test/*.js --branches=100 --statements=100 --functions=100 --lines=100;
+else
+	@echo '**********************************************************'
+	@echo 'Skip test suite                                           '
+	@echo '**********************************************************'
+endif

@@ -1,0 +1,61 @@
+node-isexe (2.0.0-6) unstable; urgency=medium
+
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on nodejs.
+  * Bump debhelper from old 12 to 13.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Wed, 15 Sep 2021 23:29:24 +0100
+
+node-isexe (2.0.0-5) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Apply multi-arch hints.
+    + node-isexe: Add Multi-Arch: foreign.
+
+  [ Pirate Praveen ]
+  * Use dh-sequence-nodejs auto install
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 06 Jan 2021 18:12:47 +0530
+
+node-isexe (2.0.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Bump policy (no changes)
+  * Move to salsa
+  * Fix lintian warnings
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 15 Nov 2018 00:14:25 +0100
+
+node-isexe (2.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Bug fix: "missing build dependency on node-mkdirp", thanks to Adrian
+    Bunk (Closes: #876936).
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 27 Sep 2017 14:01:03 +0200
+
+node-isexe (2.0.0-2) unstable; urgency=medium
+
+  * Fix autopkgtestsuite
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 27 Aug 2017 22:34:14 +0200
+
+node-isexe (2.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Improves rules
+  * Improve description
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 25 Aug 2017 16:52:21 +0200
+
+node-isexe (1.1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #841151)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 18 Oct 2016 11:32:20 +0530

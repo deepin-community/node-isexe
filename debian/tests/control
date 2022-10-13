@@ -1,0 +1,5 @@
+Tests: require
+Depends: node-isexe, nodejs (>= 6)
+
+Tests: runtestsuite
+Depends: node-isexe, node-tap, node-rimraf, node-mkdirp
