@@ -1,1 +1,2 @@
-.pc/
+.nyc_output/
+coverage/
